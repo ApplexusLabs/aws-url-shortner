@@ -1,0 +1,22 @@
+---
+swagger: "2.0"
+info:
+  version: "2016-06-13T23:58:18Z"
+  title: "pletcherUrlShortner"
+host: "xxxxxxxx.execute-api.us-east-1.amazonaws.com"
+basePath: "/dev"
+schemes:
+- "https"
+paths:
+  /:
+    post:
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
